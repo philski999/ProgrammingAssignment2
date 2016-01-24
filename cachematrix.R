@@ -23,6 +23,6 @@ cacheSolve <- function(x, ...) {
     return (inverse)
   }
   originalMatrix <- x$get()
-  x$setInverse(solve(originalMatrix))
+  x$setInverse(solve(originalMatrix, ...))
   x$getInverse()
 }
